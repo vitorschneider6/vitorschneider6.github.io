@@ -1,0 +1,151 @@
+.formacao {
+  padding: 120px 0;
+  margin-top: 40px;
+  background-color: #141414;
+  position: relative;
+}
+
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+.formacao-info {
+  display: grid;
+  gap: 60px;
+}
+
+.formacoes {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.formacao-texto {
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.formacoes li {
+  padding: 20px;
+  background-color: #090909;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  position: relative;
+}
+
+.formacoes li::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  display: block;
+  top: 20px;
+  left: -4px;
+}
+
+.formacoes li .nome-principal {
+  flex: 1;
+  color: white;
+  margin: 10px 0 50px 0;
+  line-height: 25px;
+}
+
+.formacoes span {
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  display: block;
+}
+
+.cursos-title {
+  display: block;
+  color: #8f8f8f;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.formacao-cursos {
+  position: relative;
+}
+
+.formacao-cursos img {
+  position: absolute;
+  left: -40px;
+  top: -2px;
+}
+
+.formacao-cursos ul {
+  display: grid;
+  row-gap: 20px;
+}
+
+.formacao-cursos li {
+  color: #ffffff;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.formacao-cursos ul span {
+  color: #8f8f8f;
+  font-size: 1.125rem;
+}
+
+.cursos-lista {
+  grid-template-columns: 1fr 1fr;
+}
+
+.cursos-lista span {
+  justify-self: end;
+}
+
+.idiomas-lista {
+  grid-template-columns: 1fr;
+}
+
+.idiomas-lista span {
+  display: inline;
+}
+
+.formacao-container::after {
+  content: "";
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  display: block;
+  position: absolute;
+  bottom: -50px;
+}
+
+@media (max-width: 900px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 40px;
+  }
+  .formacao-container .subtitulo {
+    color: #ffffff;
+    max-width: initial !important;
+  }
+  .formacao-cursos img {
+    position: initial;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .formacoes {
+    flex-direction: column;
+  }
+}

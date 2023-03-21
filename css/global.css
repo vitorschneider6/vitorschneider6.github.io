@@ -1,0 +1,61 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.subtitulo {
+  font-size: 9rem;
+  line-height: 144px;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+}
+
+@media (max-width: 900px) {
+  .subtitulo {
+    text-transform: capitalize;
+    max-width: initial;
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .subtitulo {
+    font-size: 3.5rem;
+  }
+}
+
+.texto {
+  font-size: 1.5rem;
+  line-height: 32px;
+  max-width: 40ch;
+  margin-bottom: 60px;
+}
+
+.tamanho {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.intro-texto {
+  font-size: 1.5rem;
+  line-height: 32px;
+  max-width: 40ch;
+}
